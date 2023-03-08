@@ -10,12 +10,16 @@ using System.Windows.Forms;
 
 namespace FormCadastroDeVeiculo
 {
-    public partial class Form1 : Form
+    public partial class FormMenu : Form
     {
-        public Form1()
+        public FormMenu()
         {
             InitializeComponent();
         }
 
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            Banco.CriarBanco();
+        }
     }
 }

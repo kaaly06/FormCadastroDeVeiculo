@@ -1,6 +1,6 @@
 ﻿namespace FormCadastroDeVeiculo
 {
-    partial class Form1
+    partial class FormMenu
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -217,6 +217,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(531, 28);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(95, 20);
@@ -295,11 +296,11 @@
             this.textBox2.Size = new System.Drawing.Size(478, 20);
             this.textBox2.TabIndex = 26;
             // 
-            // Form1
+            // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(977, 473);
+            this.ClientSize = new System.Drawing.Size(1017, 469);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox10);
@@ -326,9 +327,11 @@
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
-            this.Name = "Form1";
+            this.Name = "FormMenu";
             this.ShowIcon = false;
             this.Text = "Cadastro de Veículos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
